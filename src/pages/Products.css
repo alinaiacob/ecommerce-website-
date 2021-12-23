@@ -1,0 +1,30 @@
+#products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+#products >h1{
+    align-self: flex-start;
+    text-align:start;
+    padding:20px;
+    font-size: 25px;
+}
+
+.products{
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+@media only screen and (max-width:600px){
+    #products{
+        padding:0;
+        align-self: center;
+      
+    }
+    
+   
+
+}

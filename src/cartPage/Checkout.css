@@ -1,0 +1,12 @@
+.checkout{
+    display:flex;
+    flex-direction: column;
+    padding:10px 20px;
+}
+.checkout>h1{
+    align-self: flex-start;
+}
+.checkoutProducts{
+    display:flex;
+    flex-direction: column;
+}

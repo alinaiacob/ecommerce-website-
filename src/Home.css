@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+
+.home{
+    width:100vw;
+  
+   display:flex;
+   flex-direction: space-around;
+   
+
+ overflow-x: hidden;
+   
+   position:relative;
+   
+   
+  
+}
+
+.home__left{
+    
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin-right: 50px;
+  
+  
+}
+#img{
+    transition: 0.3s all ease-in-out;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+#img:hover{
+    transform: scale(1.07);
+}
+.homeLeftFirst{
+
+  
+  height : 400px;
+   object-fit: contain;
+    
+   
+    z-index: 2;
+}
+.homeLeftSecond{
+  
+    height: 330px;
+    object-fit: contain;
+
+}
+.home__right{
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    align-self: center;
+    margin-top: 20px;
+    height: calc( 100vh - 70px);
+    
+  
+  
+    
+}
+.home__rightText{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    align-self: center;
+    margin-bottom: 50px;
+
+  
+   
+}
+.home__rightText h4{
+    font-size: 25px;
+    margin:10px 0;
+    align-self: center;
+    letter-spacing: 0.05rem;
+    text-align: center;
+
+}
+
+.home__rightText p{
+    font-family: 'Viaoda Libre', cursive;
+    font-size: 20px;
+    letter-spacing: 0.05rem;
+}
+
+.home__right button{
+    border:none;
+    border-radius: 10px;
+    padding:10px 20px;
+    background: #DFB9B5;
+
+    font-family: 'Montserrat',sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    width: 40%;
+    align-self: center;
+    margin-bottom: 100px;
+  
+    transition: 0.3s all ease-out;
+   
+
+}
+.home__right button:hover{
+  background: #D09791;
+  background: #B9B5DF;
+
+}
+
+
+
+
+
+@media  screen and (max-width:750px){
+    .home{
+        display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      min-height: 100vh;
+      overflow-y: visible;
+      
+    }
+    .home__left{
+        flex-direction: column;
+        margin: 0;
+ 
+    }
+    .homeLeftFirst{
+        margin: 0;
+        margin-bottom: 50px;
+        
+    }
+   .homeLeftFirst,.homeLeftSecond,#img{
+     height: 500px;
+       object-fit: contain;
+       margin-left: 0px;
+       border-radius: 10px;
+   
+       
+     
+
+   }
+   .home__right{
+       max-height: 400px;
+       margin-top: 50px;
+   }
+  .home__rightText{
+     max-height: 100px;
+  }
+  
+}
+@media only screen and (min-width:800px){
+    .home{
+        height: calc( 100vh - 70px);
+    }
+}

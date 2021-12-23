@@ -1,0 +1,23 @@
+.cart{
+    min-width: calc ( 100vh- 70px);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding:10px 20px;
+}
+.cart>h2{
+    text-align: center;
+    font-size:19px;
+    padding-top: 5vh;
+}
+.cart__container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+@media only screen and (max-width:900px){
+    .cart{
+        justify-content: flex-start;
+        align-items: center;
+    }
+}

@@ -1,0 +1,174 @@
+.header{
+    display:flex;
+    justify-content: space-between;
+    width:100vw;
+    
+    padding:10px 20px;
+    background-color:#dfb9b5;
+    position: relative;
+    height: 70px;
+    /*overflow: hidden;*/
+    
+}
+a{
+    text-decoration: none;
+    color:white;  
+}
+
+.header__left a p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav{
+    font-weight: bold;
+   
+}
+.nav__top{
+    display: flex;
+  margin-bottom: 10px;
+}
+
+.nav__top a{
+    font-size: 20px;
+    margin-left: 20px;
+}
+.nav__option{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    color:black;
+}
+.nav__option span{
+    margin-right: 10px;
+}
+.nav__bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    
+    position: absolute;
+    left:0;
+    padding-top:5px;
+    top:40px;
+}
+
+.nav__bottom a p{
+    font-size: 17px;
+    font-weight:550;
+    transition: 0.3s all ease-in-out;
+    color:white;
+    align-self: flex-start;
+}
+.nav__bottom a p:hover{
+    color:black;
+}
+
+.account__icon,.fav__icon,.checkout__icon{
+    width:20px;
+    height:20px;
+    object-fit: contain;
+}
+#header__icon{
+    transform:scale(0.8);
+    object-fit: contain;
+}
+.account{
+    width: 25px;
+    object-fit: contain;
+}
+.cart__icon{
+    width:25px;
+    object-fit:contain;
+}
+.headerIcon {
+ 
+    display: none;
+}
+.menuIcon{
+    width: 25px;
+    object-fit: contain;
+    color:white;
+}
+.xIcon{
+    width: 25px;
+    object-fit: contain;
+    color:white;
+}
+@media only screen and (max-width:900px){
+
+ 
+ 
+ .nav{
+     flex:1;
+     width: 70vw;
+     height: 100vh;
+   
+     z-index: 100;
+     flex-direction: column;
+     background-color:#dfb9b5;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;; 
+   transform: translateX(-900px);
+    justify-content:flex-start ;
+    align-items: center;
+    
+     transition: 0.5s all ease-in-out;
+ }
+  .nav__top{
+      flex-direction: column;
+      top:50px;
+      
+  }
+  .nav__option{
+    margin-right: 30px;
+  }
+  .nav__top a{
+      margin-bottom: 10px;
+  }
+   .nav__bottom{
+   
+   justify-content: center;
+   align-items: center;
+   margin-top: 10px;
+    flex-direction: column;
+    position: absolute;
+
+    
+ 
+}
+.nav__bottom a{
+    margin-top:10px;
+    margin-left: 10px;
+    text-align: center;
+    align-self: center;
+    
+}
+    .show  {
+   transform: translateX(25vw);
+   position: absolute;
+   top:70px;
+    }
+    .show .nav__bottom{
+        left:-20vw;
+    }
+   .headerIcon {
+       display: block;
+       position: absolute;
+       right: 20px;
+       
+   }
+   .cart__icon{
+       width: 25px;
+       margin-left: 40px;
+       object-fit: contain;
+       align-self:center;
+       margin-bottom: 5px;
+   }
+  
+}
